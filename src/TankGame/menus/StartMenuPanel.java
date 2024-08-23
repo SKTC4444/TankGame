@@ -17,7 +17,7 @@ public class StartMenuPanel extends JPanel {
         try {
             InputStream is = getClass().getClassLoader().getResourceAsStream("tankgame-res/Title.bmp");
             if (is == null) {
-                throw new IOException("Resource not found: tankgame-sample-res/Title.bmp");
+                throw new IOException("Resource not found: tankgame-res/Title.bmp");
             }
             menuBackground = ImageIO.read(is);
         } catch (IOException e) {
